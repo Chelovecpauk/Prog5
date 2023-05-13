@@ -52,5 +52,13 @@ public class UserManager {
         }else{
             System.out.println("Ошибка: команды " + command + "не существует" + "\nЧтобы посмотреть список доступных команд, введите: help");
         }
+        scanner.close();
+    }
+
+    public static void setIsWorking(boolean isWorking) {
+        UserManager.isWorking = isWorking;
+    }
+    public static boolean isWorking(){
+        return isWorking;
     }
 }

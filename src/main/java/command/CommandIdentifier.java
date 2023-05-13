@@ -18,13 +18,13 @@ public class CommandIdentifier {
         commandMap.put("save", new Save());
         commandMap.put("execute_script", new ExecuteScript());
         commandMap.put("exit", new Exit());
-        commandMap.put("remove_greater", new RemoveGreater());
+      /*  commandMap.put("remove_greater", new RemoveGreater());
         commandMap.put("remove_lower", new RemoveLower());
         commandMap.put("remove_greater_key", new RemoveGreaterKey());
         commandMap.put("sum_of_distance", new SumOfDistance());
         commandMap.put("count_by_distance", new Distance());
         commandMap.put("filter_by_distance", new FilterByDistance());
-
+*/
     }
 
     public static HashMap<String, CommandAbstract> getCommandMap(){

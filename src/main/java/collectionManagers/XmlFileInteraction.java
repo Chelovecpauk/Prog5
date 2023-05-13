@@ -4,10 +4,9 @@ import collection.route.Coordinates;
 import collection.route.Route;
 import collection.route.Location;
 
-import java.io.IOException;
+import java.io.*;
+import java.util.AbstractMap;
 import java.util.LinkedHashMap;
-import java.io.FileReader;
-import java.io.FileNotFoundException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
@@ -236,10 +235,41 @@ public class XmlFileInteraction implements FileInteractionInterface{
 
         } catch(XMLStreamException exc){
             exc.printStackTrace();
+        }catch(NumberFormatException exc){
+            System.out.println("Файл содержит недопустимые значения переменных");
+            System.out.println("Допустимый формат: \nname - String\ndistance - Long\nCoordinates\n\tx - Double\n\ty - long\nLocation\n\tx - int\n\ty - Float");
         }
         return CollectionManager.sorteCollection();
     }
 
+    @Override
+    public void write(String pathToDataFile, AbstractMap<Integer,Route> routeMap){
+        try{
+            OutputStream os = new FileOutputStream(pathToDataFile);
+            Writer osr = new OutputStreamWriter(os);
+            for (Route route: CollectionManager.getRouteMap().values()){
+                osr.write("<?xml version=\"1.1\" encoding=\"UTF-8\" ?>\n" +
+                        "<Route>\n" +
+                        "    <name>" + route.getName() + "</name>\n" +
+                        "    <distance>" + route.getDistance() + "</distance>\n" +
+                        "    <coordinates>\n" +
+                        "        <x>" + route.getCoordinates().getX() + "</x>\n" +
+                        "        <y>" + route.getCoordinates().getY() + "</y>\n" +
+                        "    </coordinates>\n" +
+                        "    <location_from>\n" +
+                        "        <x>" + route.getFrom().getX() + "</x>\n" +
+                        "        <y>" + route.getFrom().getY() + "</y>\n" +
+                        "    </location_from>\n" +
+                        "    <location_to>\n" +
+                        "        <x>" + route.getTo().getX() + "</x>\n" +
+                        "        <y>" + route.getTo().getY() + "</y>\n" +
+                        "    </location_to>\n" +
+                        "</Route>");
+            }
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
     @Override
     public String getStructureFile() {
         String example;

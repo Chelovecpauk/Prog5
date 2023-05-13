@@ -10,7 +10,7 @@ public class Info extends CommandAbstract {
     }
 
     @Override
-    public  execute(){
+    public void execute(){
         System.out.println(
                 "Тип коллекции: " + CollectionManager.getType() + "\n" +
                 "Дата инициализации: " + CollectionManager.getInitialDAte() + "\n" +

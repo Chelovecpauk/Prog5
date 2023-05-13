@@ -32,6 +32,7 @@ public class CollectionManager {
     public static void setCollection(LinkedHashMap<Integer,Route> routeMap){
         CollectionManager.routeMap = routeMap;
         setInitialDate();
+        sorteCollection();
     }
     public static void setPathToDataFile(String pathToDataFile){
         CollectionManager.pathToDataFile = pathToDataFile;
