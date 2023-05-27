@@ -4,28 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b564623-4193-4335-8fa9-58ff03b4f8a1" name="Changes" comment="">
+    <list default="true" id="4b564623-4193-4335-8fa9-58ff03b4f8a1" name="Changes" comment="H">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collection/route/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/route/Route.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/collectionManagers/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collectionManagers/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collectionManagers/XmlFileInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collectionManagers/XmlFileInteraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandAbstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandIdentifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Clear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/CountByDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/CountByDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/ExecuteScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/FilterByDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/FilterByDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Insert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreaterKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreaterKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/RemoveKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/RemoveKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/RemoveLower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/RemoveLower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Save.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/SumOfDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/SumOfDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/xmlMainFile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/xmlMainFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/xmlStructure" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/xmlStructure" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/UserManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +98,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Бахтияр/IdeaProjects/Prog5",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "Console"
   }
@@ -115,6 +113,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Prog5 [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Prog5 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -144,11 +163,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.Prog5 [buildDependents]" />
       <item itemvalue="Gradle.Prog5 [build]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Prog5 [build]" />
+        <item itemvalue="Gradle.Prog5 [buildDependents]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -167,8 +188,17 @@
       <workItem from="1683477285489" duration="6047000" />
       <workItem from="1683567944843" duration="76901000" />
       <workItem from="1683968463542" duration="11210000" />
-      <workItem from="1684949894269" duration="38166000" />
+      <workItem from="1684949894269" duration="41640000" />
+      <workItem from="1685175092978" duration="4337000" />
     </task>
+    <task id="LOCAL-00001" summary="H">
+      <created>1685164724409</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685164724409</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +214,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="H" />
+    <option name="LAST_COMMIT_MESSAGE" value="H" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

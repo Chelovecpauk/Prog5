@@ -6,6 +6,10 @@ import command.CommandAbstract;
 
 import java.util.Map;
 
+/**
+ * Выводит элементы, значение поля distance которых равно заданному
+ * @author KasimovBakhtiyar
+ */
 public class FilterByDistance extends CommandAbstract {
     public FilterByDistance() {
         super(true, false);

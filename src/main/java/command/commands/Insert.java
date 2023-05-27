@@ -11,6 +11,11 @@ import java.util.Scanner;
 import static java.lang.Integer.parseInt;
 import static java.lang.Long.parseLong;
 
+/**
+ * Добавляет новый элемент с заданным ключом
+ * @author KasimovBakhtiyar
+ */
+
 public class Insert extends CommandAbstract {
     public Insert(){
         super(true, false);

@@ -8,6 +8,11 @@ import command.CommandAbstract;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * Удаляет из коллекции все элементы, меньшие, чем заданный
+ * @author KasimovBakhtiyar
+ */
+
 public class RemoveLower extends CommandAbstract {
 
     public RemoveLower(){

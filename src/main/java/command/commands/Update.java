@@ -10,6 +10,10 @@ import java.util.Scanner;
 import static java.lang.Integer.parseInt;
 import static java.lang.Long.parseLong;
 
+/**
+ * Обновляет значение элемента коллекции, id которого равен заданному
+ * @author KasimovBakhtiyar
+ */
 
 public class Update extends CommandAbstract {
 

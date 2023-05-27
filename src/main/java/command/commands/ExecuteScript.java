@@ -9,6 +9,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import command.CommandIdentifier;
+
+/**
+ * Выполняет скрипт из файла
+ * @author KasimovBakhtiyar
+ */
 public class ExecuteScript extends CommandAbstract {
 
     public ExecuteScript(){

@@ -7,6 +7,10 @@ import command.CommandAbstract;
 import java.util.Iterator;
 import java.util.Map;
 
+/**
+ * Удаляет из коллекции все элементы, ключ которых превышает заданный
+ * @author KasimovBakhtiyar
+ */
 public class RemoveGreaterKey extends CommandAbstract {
     public RemoveGreaterKey(){
         super(true,false);

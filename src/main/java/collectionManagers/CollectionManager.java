@@ -51,13 +51,17 @@ public class CollectionManager {
     }
 
     public static void loadCollection(String envKey){
-        try{ String pathToDataFile = System.getenv(envKey);}
+        try{ pathToDataFile = System.getenv(envKey);
+            System.out.println(pathToDataFile);
+        }
         catch (NullPointerException exc){
             System.out.println("Переменная окружения " + envKey + " не определена в системе");
         }
-        //CollectionManager.setCollection(fileInteraction.read(pathToDataFile));
+        CollectionManager.setCollection(fileInteraction.read(pathToDataFile));
 
-        CollectionManager.setCollection(fileInteraction.read("C:\\Users\\Бахтияр\\IdeaProjects\\Prog5\\src\\main\\java\\data\\xmlMainFile"));
+        //CollectionManager.setCollection(fileInteraction.read("C:\\Users\\Бахтияр\\IdeaProjects\\Prog5\\src\\main\\java\\data\\xmlMainFile"));
+
+        //CollectionManager.setCollection(fileInteraction.read("/home/studs/s367273/Prog5/Prog5/src/main/java/data/xmlMainFile"));
 
     }
 

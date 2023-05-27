@@ -2,6 +2,10 @@ package command.commands;
 
 import command.CommandAbstract;
 
+/**
+ * Выводит справку по доступным командам
+ * @author KasimovBakhtiyar
+ */
 public class Help extends CommandAbstract {
     public Help(){
         super(false, false);

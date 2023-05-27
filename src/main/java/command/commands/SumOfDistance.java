@@ -6,6 +6,11 @@ import command.CommandAbstract;
 
 import java.util.Map;
 
+/**
+ * Выводит сумму значений поля distance для всех элементов коллекции
+ * @author KasimovBakhtiyar
+ */
+
 public class SumOfDistance extends CommandAbstract {
     public SumOfDistance(){
         super(false,false);

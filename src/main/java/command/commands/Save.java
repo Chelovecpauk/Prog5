@@ -5,6 +5,11 @@ import collectionManagers.FileInteractionInterface;
 import collectionManagers.XmlFileInteraction;
 import command.CommandAbstract;
 
+/**
+ * Сохраняет в коллекцию
+ * @author KasimovBakhtiyar
+ */
+
 public class Save extends CommandAbstract {
 
     public Save(){

@@ -4,6 +4,10 @@ import collectionManagers.CollectionManager;
 import command.CommandAbstract;
 import command.CommandIdentifier;
 
+/**
+ * Команда очищает коллекцию
+ * @author KasimovBakhtiyar
+ */
 public class Clear extends CommandAbstract {
     public Clear(){
         super(false,false);

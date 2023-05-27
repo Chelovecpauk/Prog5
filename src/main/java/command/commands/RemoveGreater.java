@@ -14,6 +14,10 @@ import java.util.Scanner;
 import static java.lang.Integer.parseInt;
 import static java.lang.Long.parseLong;
 
+/**
+ * Удаляет из коллекции все элементы, превышающие заданный
+ * @author KasimovBakhtiyar
+ */
 public class RemoveGreater extends CommandAbstract {
 
     public RemoveGreater(){

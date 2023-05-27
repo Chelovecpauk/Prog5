@@ -6,6 +6,11 @@ import command.CommandAbstract;
 
 import java.util.Map;
 
+/**
+ * выводит количество элементов, значение поля distance которых равно заданному
+ * @author KasimovBakhtiyar
+ */
+
 public class CountByDistance extends CommandAbstract {
     public CountByDistance() {
         super(true, false);
