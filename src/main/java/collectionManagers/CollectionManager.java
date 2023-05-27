@@ -51,11 +51,14 @@ public class CollectionManager {
     }
 
     public static void loadCollection(String envKey){
-        String pathToDataFile = System.getenv(envKey);
-        if (pathToDataFile == null){
+        try{ String pathToDataFile = System.getenv(envKey);}
+        catch (NullPointerException exc){
             System.out.println("Переменная окружения " + envKey + " не определена в системе");
         }
-        CollectionManager.setCollection(fileInteraction.read(pathToDataFile));
+        //CollectionManager.setCollection(fileInteraction.read(pathToDataFile));
+
+        CollectionManager.setCollection(fileInteraction.read("C:\\Users\\Бахтияр\\IdeaProjects\\Prog5\\src\\main\\java\\data\\xmlMainFile"));
+
     }
 
     public static LinkedHashMap<Integer, Route> sorteCollection(){
@@ -95,7 +98,7 @@ public class CollectionManager {
             route.setFrom(from);
             route.setTo(to);
 
-            scanner.close();
+            //scanner.close();
 
             return route;
 

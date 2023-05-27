@@ -5,24 +5,31 @@ import collection.route.Route;
 import collectionManagers.CollectionManager;
 import command.CommandAbstract;
 
+import java.util.Iterator;
 import java.util.Map;
 
 public class RemoveLower extends CommandAbstract {
 
     public RemoveLower(){
-        super(true,false);
+        super(false,false);
     }
 
-    public void setArgument1(Object argument1){
-        this.argument1 = CollectionManager.requestRoute();
-    }
 
     public void execute(){
+        System.out.println("Создайте объект для сравнения:");
+        Route comparedRoute = CollectionManager.requestRoute();
         RouteComparator routeComparator = new RouteComparator();
-        for (Map.Entry<Integer, Route> entry : CollectionManager.getRouteMap().entrySet()){
-            if (routeComparator.compare(entry.getValue(), (Route) argument1) < 0){
-                CollectionManager.getRouteMap().remove(entry.getKey());
+
+        Iterator<Map.Entry<Integer, Route>> it = CollectionManager.getRouteMap().entrySet().iterator();
+        Map.Entry<Integer, Route> entry;
+        while(it.hasNext()) {
+            entry = it.next();
+            if (routeComparator.compare(entry.getValue(), comparedRoute) < 0) {
+                it.remove();
+
             }
         }
+        System.out.println("Меньшие элементы удалены (при присутствии)");
+
     }
 }

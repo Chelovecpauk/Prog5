@@ -8,9 +8,24 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collection/route/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collection/route/Route.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/collectionManagers/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collectionManagers/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collectionManagers/XmlFileInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collectionManagers/XmlFileInteraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandIdentifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Clear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/CountByDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/CountByDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/FilterByDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/FilterByDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/ExecuteScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreaterKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/RemoveGreaterKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/RemoveLower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/RemoveLower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/commands/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/xmlMainFile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/xmlMainFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/xmlStructure" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/xmlStructure" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/user/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/UserManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,16 +101,32 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Console"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Prog5 [build]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="p5" value="&quot;C:\Users\Бахтияр\IdeaProjects\Prog5\src\main\java\data\xmlMainFile&quot;" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Prog5.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Prog5 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="p5" value="&quot;C:\\Users\\Бахтияр\\IdeaProjects\\Prog5\\src\\main\\java\\data\\xmlMainFile&quot;" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -111,9 +142,14 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.Prog5 [build]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Prog5 [build]" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +165,9 @@
       <workItem from="1681397594177" duration="19252000" />
       <workItem from="1682626723994" duration="59901000" />
       <workItem from="1683477285489" duration="6047000" />
-      <workItem from="1683567944843" duration="73630000" />
+      <workItem from="1683567944843" duration="76901000" />
+      <workItem from="1683968463542" duration="11210000" />
+      <workItem from="1684949894269" duration="38166000" />
     </task>
     <servers />
   </component>
@@ -146,5 +184,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

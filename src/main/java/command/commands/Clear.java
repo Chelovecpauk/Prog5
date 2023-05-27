@@ -11,5 +11,6 @@ public class Clear extends CommandAbstract {
 
     public void execute(){
         CollectionManager.getRouteMap().clear();
+        System.out.println("Коллекция очищена");
     }
 }

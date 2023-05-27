@@ -31,7 +31,6 @@ public class Route {
     public String getName() {
         return name;
     }
-
     public Coordinates getCoordinates() {
         return coordinates;
     }
@@ -110,6 +109,22 @@ public class Route {
             this.to = to;
             return true;
         }
+    }
+    @Override
+    public String toString(){
+        return "id: " + id +
+                "\nname: " + name +
+                "\ncoordinates: " +
+                "\nx: " + coordinates.getX() +
+                "\ny: " + coordinates.getY() +
+                "\ncreationDate: " + creationDate +
+                "\nfrom: " +
+                "\nx: " + from.getX() +
+                "\ny: " + from.getY() +
+                "\nto: " +
+                "\nx: " + to.getX() +
+                "\ny: " + to.getY() +
+                "\ndistance: " + distance;
     }
 
 }

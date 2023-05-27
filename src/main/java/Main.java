@@ -3,8 +3,8 @@ import user.UserManager;
 
 public class Main {
     public static void main(String[] args) {
-        String envKey = "p5";
-        CollectionManager.loadCollection(envKey);
+        final String ENVKEY = "p5";
+        CollectionManager.loadCollection(ENVKEY);
 
         while (UserManager.isWorking()){
             UserManager.requestCommand();

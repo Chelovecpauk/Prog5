@@ -24,5 +24,7 @@ public class CountByDistance extends CommandAbstract {
                 count++;
             }
         }
+
+        System.out.println("Количество элементов, значение поля distance которых равно заданному: " + count);
     }
 }

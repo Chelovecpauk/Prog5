@@ -14,11 +14,9 @@ public abstract class CommandAbstract {
     public abstract void execute();
     public void setArgument1(String argument1){
         if (hasArgument1){this.argument1 = argument1;}
-        else{System.out.println("Команда не имеет аргументов");}
     };
     public void setArgument2(Object argument2){
         if (hasArgument2){this.argument2 = argument2;}
-        else{System.out.println("Команда не имеет второго аргумента");}
     };
 
     public boolean isHasArgument1(){

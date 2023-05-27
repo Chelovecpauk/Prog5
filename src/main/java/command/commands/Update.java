@@ -22,7 +22,7 @@ public class Update extends CommandAbstract {
         Integer key = null;
 
         for (Map.Entry<Integer,Route> entry : CollectionManager.getRouteMap().entrySet()){
-            if (entry.getValue().getId() == (int) getArgument1()){
+            if (entry.getValue().getId() == Long.valueOf( (String) getArgument1() )){
                 searchRoute = entry.getValue();
                 key = entry.getKey();
                 break;
@@ -88,7 +88,7 @@ public class Update extends CommandAbstract {
                 System.out.println("Ошибка: недопустимый формат переменных");
                 System.out.println("Допустимый формат: \nname - String\ndistance - Long\nCoordinates\n\tx - Double\n\ty - long\nLocation\n\tx - int\n\ty - Float");
             }
-            scanner.close();
+            //scanner.close();
         }
     }
 }

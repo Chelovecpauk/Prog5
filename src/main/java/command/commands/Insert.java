@@ -50,9 +50,10 @@ public class Insert extends CommandAbstract {
             route.setFrom(from);
             route.setTo(to);
 
-            CollectionManager.getRouteMap().put((Integer)argument1,route);
+            CollectionManager.getRouteMap().put(Integer.valueOf((String)argument1),route);
             CollectionManager.sorteCollection();
-            scanner.close();
+            System.out.println("Элемент добавлен");
+            //scanner.close();
 
         }catch(NumberFormatException exc){
             System.out.println("Ошибка: недопустимый формат переменных");

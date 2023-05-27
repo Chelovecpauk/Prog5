@@ -6,6 +6,9 @@ import command.CommandIdentifier;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+* Класс взаимодействия с пользователем в интерактивном режиме
+*/
 public class UserManager {
     private static HashMap<String, CommandAbstract> commandMap;
     private static Scanner scanner;
@@ -50,9 +53,9 @@ public class UserManager {
                 commandMap.get(command).execute();
             }else{System.out.println("Вы ввели несоответствующее количество аргуметов");}
         }else{
-            System.out.println("Ошибка: команды " + command + "не существует" + "\nЧтобы посмотреть список доступных команд, введите: help");
+            System.out.println("Ошибка: команды " + command + " не существует" + "\nЧтобы посмотреть список доступных команд, введите: help");
         }
-        scanner.close();
+
     }
 
     public static void setIsWorking(boolean isWorking) {

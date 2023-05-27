@@ -4,6 +4,7 @@ import collection.route.Route;
 import collectionManagers.CollectionManager;
 import command.CommandAbstract;
 
+import java.util.Iterator;
 import java.util.Map;
 
 public class RemoveGreaterKey extends CommandAbstract {
@@ -16,10 +17,16 @@ public class RemoveGreaterKey extends CommandAbstract {
     }
 
     public void execute(){
-        for (Map.Entry<Integer, Route> entry : CollectionManager.getRouteMap().entrySet()){
-            if(entry.getKey() > (Integer) argument1){
-                CollectionManager.getRouteMap().remove(entry.getKey());
+        Iterator<Map.Entry<Integer, Route>> it = CollectionManager.getRouteMap().entrySet().iterator();
+        Map.Entry<Integer, Route> entry;
+        while(it.hasNext()){
+            entry = it.next();
+            if(entry.getKey() > Integer.valueOf((String)argument1)){
+                it.remove();
+
             }
         }
+        System.out.println("Элементы с превыщающим ключом удалены");
+
     }
 }

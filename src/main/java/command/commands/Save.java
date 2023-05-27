@@ -8,11 +8,12 @@ import command.CommandAbstract;
 public class Save extends CommandAbstract {
 
     public Save(){
-        super(true,false);
+        super(false,false);
     }
 
     public void execute(){
         FileInteractionInterface fileInteraction = new XmlFileInteraction();
         fileInteraction.write(CollectionManager.getPathToDataFile(),CollectionManager.getRouteMap());
+        System.out.println("Коллекция сохранена");
     }
 }
