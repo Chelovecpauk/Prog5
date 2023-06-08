@@ -21,14 +21,12 @@ public class Coordinates {
         return y;
     }
 
-    public boolean setX(Double x){
+    public void setX(Double x){
         if (x == null) {
             System.out.println("x не может быть null");
-            return false;
         }
         else{
             this.x = x;
-            return true;
         }
     }
     public void setY(long y){

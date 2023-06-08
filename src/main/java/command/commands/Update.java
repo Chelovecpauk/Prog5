@@ -21,12 +21,26 @@ public class Update extends CommandAbstract {
         super(true, false);
     }
 
+    @Override
+    public void setArgument1(String argument1) {
+        try {
+            this.argument1 = Long.valueOf(argument1);
+        }catch (NumberFormatException exc){
+            System.out.println("Ошибка формата ввода, требуется целое число");
+            System.out.print("Введите аргумент еще раз: ");
+            Scanner scan = new Scanner(System.in);
+            if (scan.hasNextLine()){
+                this.setArgument1(scan.nextLine().trim());
+            }
+        }
+    }
+
     public void execute(){
         Route searchRoute = null;
         Integer key = null;
 
         for (Map.Entry<Integer,Route> entry : CollectionManager.getRouteMap().entrySet()){
-            if (entry.getValue().getId() == Long.valueOf( (String) getArgument1() )){
+            if (entry.getValue().getId() == (Long) getArgument1() ){
                 searchRoute = entry.getValue();
                 key = entry.getKey();
                 break;
@@ -80,7 +94,7 @@ public class Update extends CommandAbstract {
                             CollectionManager.getRouteMap().put(key,searchRoute);
                             break label;
                         default:
-                            System.out.println("Ввод несоответствует предложенному списку выше");
+                            System.out.println("Ввод несоответствует предложенному выше списку");
                             break ;
                     }
 
@@ -91,6 +105,9 @@ public class Update extends CommandAbstract {
             }catch(NumberFormatException exc){
                 System.out.println("Ошибка: недопустимый формат переменных");
                 System.out.println("Допустимый формат: \nname - String\ndistance - Long\nCoordinates\n\tx - Double\n\ty - long\nLocation\n\tx - int\n\ty - Float");
+
+                System.out.println("\nПопробуйте еще раз");
+                this.execute();
             }
             //scanner.close();
         }

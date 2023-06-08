@@ -5,6 +5,7 @@ import collection.route.Route;
 import collection.route.Location;
 
 import java.io.*;
+
 import java.util.AbstractMap;
 import java.util.LinkedHashMap;
 import java.nio.file.Files;
@@ -243,16 +244,18 @@ public class XmlFileInteraction implements FileInteractionInterface{
             CollectionManager.setCollection(routeMap);
             reader.close();
 
-        } catch (FileNotFoundException exc ) {
-            exc.printStackTrace();
-            System.out.println("Ошибка: файл не обнаружен");
+        } catch (IOException exc ) {
+//            exc.printStackTrace();
+//            System.out.println("Ошибка: файл не обнаружен");
 
-            /*Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.print("Ошибка: файл не обнаружен\n" + "Введите путь к исходному xml файлу: ");
             CollectionManager.setPathToDataFile(scanner.nextLine().trim());
-            this.read(CollectionManager.getPathToDataFile());*/
+            this.read(CollectionManager.getPathToDataFile());
+
         } catch(XMLStreamException exc){
-            exc.printStackTrace();
+            System.out.println("Непредвиденная ошибка обработки или неправильный формат файла");
+            this.getStructureFile();
         }catch(NumberFormatException exc){
             System.out.println("Файл содержит недопустимые значения переменных");
             System.out.println("Допустимый формат: \nname - String\ndistance - Long\nCoordinates\n\tx - Double\n\ty - long\nLocation\n\tx - int\n\ty - Float");
@@ -289,7 +292,7 @@ public class XmlFileInteraction implements FileInteractionInterface{
                 osr.close();
             }
         }catch(IOException e){
-        e.printStackTrace();
+            System.out.println("Ошибка: файл не обнаружен");
         }
     }
     @Override
@@ -299,7 +302,7 @@ public class XmlFileInteraction implements FileInteractionInterface{
              example = new String(Files.readAllBytes(Paths.get(pathToExampleFile)));
              return "Файл должен иметь структуру\n" + example;
         }catch(IOException exc){
-            return exc.getMessage();
+            return "Просим прощения\nФайл с примером структуры не был обнаружен в системе";
         }
     }
 

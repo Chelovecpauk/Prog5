@@ -15,8 +15,12 @@ public class Show extends CommandAbstract {
 
     @Override
     public void execute(){
-        for (Route route: CollectionManager.getRouteMap().values()){
-            System.out.println(route.toString());
+        if (CollectionManager.getRouteMap().isEmpty()){
+            System.out.println("Коллекция пустая");
+        }else {
+            for (Route route : CollectionManager.getRouteMap().values()) {
+                System.out.println(route.toString());
+            }
         }
     }
 }

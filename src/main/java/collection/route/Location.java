@@ -30,25 +30,21 @@ public class Location {
         this.x = x;
     }
 
-    public boolean setY(Float y){
+    public void setY(Float y){
         if(y == null){
             System.out.println("y не может быть null");
-            return false;
         }
         else{
             this.y = y;
-            return true;
         }
     }
 
-    public boolean setName(String name){
-        if(name == ""){
+    public void setName(String name){
+        if("".equals(name)){
             System.out.println("имя не может быть пустым");
-            return false;
         }
         else{
             this.name = name;
-            return true;
         }
     }
 }

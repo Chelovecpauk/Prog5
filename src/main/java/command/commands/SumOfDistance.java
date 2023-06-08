@@ -17,10 +17,14 @@ public class SumOfDistance extends CommandAbstract {
     }
 
     public void execute(){
-        Long sum = Long.valueOf(0);
-        for (Map.Entry<Integer, Route> entry : CollectionManager.getRouteMap().entrySet()){
-            sum += entry.getValue().getDistance();
+        if (CollectionManager.getRouteMap().isEmpty()){
+            System.out.println("Коллекция пустая");
+        }else {
+            Long sum = Long.valueOf(0);
+            for (Map.Entry<Integer, Route> entry : CollectionManager.getRouteMap().entrySet()) {
+                sum += entry.getValue().getDistance();
+            }
+            System.out.println("Сумма значений поля distance: " + sum);
         }
-        System.out.println("Сумма значений поля distance: " + sum);
     }
 }

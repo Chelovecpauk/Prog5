@@ -55,59 +55,49 @@ public class Route {
         return id;
     }
 
-    public boolean setCoordinates(Coordinates coordinates) {
+    public void setCoordinates(Coordinates coordinates) {
         if(coordinates == null){
             System.out.println("coordinates не может быть null");
-            return false;
         }
         else{
             this.coordinates = coordinates;
-            return true;
         }
     }
 
-    public boolean setDistance(Long distance) {
+    public void setDistance(Long distance) {
         if (distance < 2){
             System.out.println("значение distance должно быть больше 1");
-            return false;
         }
         else{
             this.distance = distance;
-            return true;
         }
     }
 
-    public boolean setFrom(Location from) {
+    public void setFrom(Location from) {
         if (from == null){
             System.out.println("параметр from не может быть null");
-            return false;
         }
         else{
             this.from = from;
-            return true;
         }
     }
 
-    public boolean setName(String name) {
-        if(name == null || name == ""){
+    public void setName(String name) {
+        if(name == null || "".equals(name)){
             if (name == null){System.out.println("name не может быть null");}
-            if (name == ""){System.out.println("name не может быть пустым");}
-            return false;
+            if ("".equals(name)){System.out.println("name не может быть пустым");}
         }
         else{
             this.name = name;
-            return true;
         }
     }
 
-    public boolean setTo(Location to) {
+    public void setTo(Location to) {
         if (to == null){
             System.out.println("параметр to не может быть null");
-            return false;
         }
         else{
             this.to = to;
-            return true;
         }
     }
     @Override

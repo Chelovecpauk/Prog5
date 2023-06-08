@@ -2,6 +2,7 @@ package user;
 
 import command.CommandAbstract;
 import command.CommandIdentifier;
+import command.commands.ExecuteScript;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -23,6 +24,7 @@ public class UserManager {
     public static void requestCommand(){
         System.out.print("Введите команду: ");
         String userManager = scanner.nextLine().trim();
+        System.out.println();
 
         String[] input = userManager.split(" ");
         String command = input[0];
@@ -50,7 +52,16 @@ public class UserManager {
             if (condition1 && condition2){
                 commandMap.get(command).setArgument1(argument1);
                 commandMap.get(command).setArgument2(argument2);
+                if ("execute_script".equals(command)) {
+                    ExecuteScript scr = (ExecuteScript) commandMap.get("execute_script");
+                    scr.getFileNames().add(argument1);
+                }
                 commandMap.get(command).execute();
+                //for execute_script
+                ExecuteScript scr = (ExecuteScript) CommandIdentifier.getCommandMap().get("execute_script");
+                scr.getFileNames().clear();
+
+                System.out.println();
             }else{System.out.println("Вы ввели несоответствующее количество аргуметов");}
         }else{
             System.out.println("Ошибка: команды " + command + " не существует" + "\nЧтобы посмотреть список доступных команд, введите: help");
